@@ -1,9 +1,6 @@
 package com.driuft.hellosquirrel
 
-import android.os.Build
 import android.os.Bundle
-import android.view.WindowInsets
-import android.view.WindowManager
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -12,8 +9,9 @@ import androidx.appcompat.content.res.AppCompatResources
 class MainActivity : AppCompatActivity() {
 
     private lateinit var profileImage: ImageView
-    private lateinit var profileName: TextView
-    private lateinit var profileBio: TextView
+    private lateinit var Emmanuel: TextView
+    private lateinit var "my name is Emmanuel, i'm computer science major , i'm interested in coding, i learning more about technology, Al and data base in my field and looking for the future as an web developer.  TextView
+      private lateinit var "My favorite hobbies are communicating, coding, dancing and workout ".
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,8 +23,8 @@ class MainActivity : AppCompatActivity() {
 
     private fun configureViews() {
         profileImage = findViewById(R.id.profile_image)
-        profileName = findViewById(R.id.profile_name)
-        profileBio = findViewById(R.id.profile_bio)
+        Emmanuel = findViewById(R.id.profile_name)
+        `my name is Emmanuel, i'm computer science major , one insterest part about me is that i love to communicate, coding , dancing , music and food` = findViewById(R.id.profile_bio)
     }
 
     private fun setupProfile() {
@@ -39,7 +37,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun configureName() {
-        profileName.text = getString(
+        Emmanuel.text = getString(
             R.string.full_name,
             getString(R.string.first_name),
             getString(R.string.last_name)
